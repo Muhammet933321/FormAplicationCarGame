@@ -36,7 +36,7 @@ namespace FormCarGame
             Player1label.Text = "";
             Player2label.Text = "";
 
-            isGameEnd = false;
+            isGameEnd = true;
         }
 
 
@@ -82,6 +82,11 @@ namespace FormCarGame
         private void GameScene_Load(object sender, EventArgs e)
         { 
             gameTimer.Start();
+        }
+
+        private void Startbtn_Click(object sender, EventArgs e)
+        {
+            isGameEnd = false;
         }
     }
 }

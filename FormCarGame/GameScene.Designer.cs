@@ -36,6 +36,7 @@
             this.Player2label = new System.Windows.Forms.Label();
             this.Player1Name = new System.Windows.Forms.Label();
             this.Player2Name = new System.Windows.Forms.Label();
+            this.Startbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Player1Slide
@@ -97,11 +98,23 @@
             this.Player2Name.TabIndex = 5;
             this.Player2Name.Text = "Player2";
             // 
+            // Startbtn
+            // 
+            this.Startbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Startbtn.Location = new System.Drawing.Point(297, 380);
+            this.Startbtn.Name = "Startbtn";
+            this.Startbtn.Size = new System.Drawing.Size(200, 60);
+            this.Startbtn.TabIndex = 6;
+            this.Startbtn.Text = "Start";
+            this.Startbtn.UseVisualStyleBackColor = true;
+            this.Startbtn.Click += new System.EventHandler(this.Startbtn_Click);
+            // 
             // GameScene
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(812, 488);
+            this.Controls.Add(this.Startbtn);
             this.Controls.Add(this.Player2Name);
             this.Controls.Add(this.Player1Name);
             this.Controls.Add(this.Player2label);
@@ -125,6 +138,7 @@
         private System.Windows.Forms.Label Player2label;
         private System.Windows.Forms.Label Player1Name;
         private System.Windows.Forms.Label Player2Name;
+        private System.Windows.Forms.Button Startbtn;
     }
 }
 
